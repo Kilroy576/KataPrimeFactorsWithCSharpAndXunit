@@ -6,7 +6,7 @@ namespace KataPrimeFactors
     {   
         public List<int> Generate(int input)
         {
-            return new List<int>() { 2 };
+            return new List<int>() { input };
         }
     }
 }
