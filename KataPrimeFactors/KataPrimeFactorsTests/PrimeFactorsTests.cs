@@ -14,6 +14,7 @@ namespace KataPrimeFactorsTests
         [InlineData(5, new int[]{ 5 }, "should contain third prime")]
         [InlineData(6, new int[]{ 2, 3 }, "should contain prime factors from second none prime")]
         [InlineData(7, new int[]{ 7 }, "should contain 4. prime")]
+        [InlineData(11, new int[]{ 11 }, "should contain 5. prime")]
         [InlineData(8, new int[]{ 2, 2, 2 }, "should contain prime factors 2x2x2")]
         [InlineData(12, new int[]{ 2, 2, 3 }, "should contain prime factors 2x2x3")]
         [InlineData(16, new int[]{ 2, 2, 2, 2 }, "should contain prime factors 2x2x2x2")]
