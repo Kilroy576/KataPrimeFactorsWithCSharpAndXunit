@@ -7,29 +7,16 @@ namespace KataPrimeFactorsTests
 {
     public class PrimeFactorsTests
     {
-        [Fact]
-        public void Generate_FirstPrime_ReturnFirstPrime()
+        [Theory]
+        [InlineData(2, new int[]{ 2 })]
+        [InlineData(3, new int[]{ 3 })]
+        public void Generate_GetParameterFromData_ReturnExpected(int input, int[] expected)
         {
             var target = new PrimeFactors();
-            var input = 2;
-            List<int> expected = new List<int>() { 2 };
 
             var actual = target.Generate(input);
 
             actual.Should().Equal(expected);
         }
-        
-        [Fact]
-        public void Generate_SecondPrime_ReturnSecondPrime()
-        {
-            var target = new PrimeFactors();
-            var input = 3;
-            List<int> expected = new List<int>() { 3 };
-
-            var actual = target.Generate(input);
-
-            actual.Should().Equal(expected);
-        }
-        
     }
 }
