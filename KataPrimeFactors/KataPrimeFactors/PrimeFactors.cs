@@ -6,17 +6,20 @@ namespace KataPrimeFactors
     {   
         public List<int> Generate(int input)
         {
-            if (input == 6)
+            var result = new List<int>();
+
+            if (input % 2 == 0)
             {
-                return new List<int>() { 2, 3 };
+                result.Add(2);
+                input /= 2;
             }
-            
-            if (input == 4)
+
+            if (input > 1)
             {
-                return new List<int>() { 2, 2 };
+                result.Add(input);
             }
-            
-            return new List<int>() { input };
+
+            return result;
         }
     }
 }
