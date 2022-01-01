@@ -12,6 +12,7 @@ namespace KataPrimeFactorsTests
         [InlineData(3, new int[]{ 3 }, "should contain second prime")]
         [InlineData(4, new int[]{ 2, 2 }, "should contain prime factors from first none prime")]
         [InlineData(5, new int[]{ 5 }, "should contain third prime")]
+        [InlineData(6, new int[]{ 2, 3 }, "should contain prime factors from second none prime")]
         public void Generate_GetParameterFromData_ReturnExpected(int input, int[] expected, string message)
         {
             var target = new PrimeFactors();
