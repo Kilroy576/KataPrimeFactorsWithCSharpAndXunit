@@ -18,5 +18,18 @@ namespace KataPrimeFactorsTests
 
             actual.Should().Equal(expected);
         }
+        
+        [Fact]
+        public void Generate_SecondPrime_ReturnSecondPrime()
+        {
+            var target = new PrimeFactors();
+            var input = 3;
+            List<int> expected = new List<int>() { 3 };
+
+            var actual = target.Generate(input);
+
+            actual.Should().Equal(expected);
+        }
+        
     }
 }
