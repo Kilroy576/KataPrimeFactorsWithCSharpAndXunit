@@ -8,10 +8,13 @@ namespace KataPrimeFactors
         {
             var result = new List<int>();
 
-            if (input % 2 == 0)
+            for (int divisor = 2; divisor < input; divisor++)
             {
-                result.Add(2);
-                input /= 2;
+                while (input % divisor == 0)
+                {
+                    result.Add(divisor);
+                    input /= divisor;
+                }
             }
 
             if (input > 1)

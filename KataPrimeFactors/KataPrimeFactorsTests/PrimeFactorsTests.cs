@@ -20,7 +20,7 @@ namespace KataPrimeFactorsTests
         [InlineData(11, new int[]{ 11 }, "should contain 5. prime")]
         [InlineData(12, new int[]{ 2, 2, 3 }, "should contain prime factors 2x2x3")]
         [InlineData(13, new int[]{ 13 }, "should contain 6. prime")]
-        [InlineData(14, new int[]{ 2, 2, 5 }, "should contain prime factors 2x2x5")]
+        [InlineData(14, new int[]{ 2, 7 }, "should contain prime factors 2x7")]
         [InlineData(15, new int[]{ 3, 5 }, "should contain prime factors 3x5")]
         [InlineData(16, new int[]{ 2, 2, 2, 2 }, "should contain prime factors 2x2x2x2")]
         [InlineData(17, new int[]{ 17 }, "should contain 7. prime")]
