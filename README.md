@@ -8,3 +8,4 @@ Target:
 
 Bonus:
 - User JetBrains Rider as IDE for Development
+- Use Git Console and try to use rebase
